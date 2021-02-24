@@ -8,7 +8,7 @@
 ## Feature
 ### shell
 1. 會顯示當前current working directory
-2.可以在任何working directory執行位在根目錄的城市
+2. 可以在任何working directory執行位在根目錄的城市
 
 ## Bug
 ### shell
