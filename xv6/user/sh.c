@@ -515,6 +515,14 @@ nulterminate(struct cmd *cmd)
 int
 updatepwd(char* dir)
 {
+  if(strcmp(dir,"/")==0) {
+    memset(pwd, 0, 90), pwd[0]='/';
+    return 1;
+  }
+  if(dir[0]=='/'){
+    memset(pwd,0,90), strcpy(pwd,dir);
+    return 1;
+  }
   char* cur = pwd;
   while(*cur!='\0') ++cur; // move cur to tail '\0'
   if(strcmp(dir,".")==0)
